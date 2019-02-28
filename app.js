@@ -2,21 +2,15 @@ const app = angular.module('app', ['ui.router'])
 
 app.config(($stateProvider, $urlRouterProvider) => {
 
-  $stateProvider.state({
-    name: 'user',
-    url: '/user',
+  $stateProvider.state('hello', {
+    url: '/hello',
     template: '<h1>Hello, {{name}}!</h1>',
-    controller: function ($scope, userData) {
-      $scope.name = userData.name;
-    },
-    resolve: {
-      userData: () => ({
-        name: 'angular'
-      })
+    controller: function ($scope) {
+      $scope.name = 'uirouter';
     }
   });
 
-  $urlRouterProvider.otherwise('/user');
+  $urlRouterProvider.otherwise('/hello');
 
 });
 

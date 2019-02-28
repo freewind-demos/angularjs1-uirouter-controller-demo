@@ -1,7 +1,7 @@
-AngularJS1 "@uirouter" Controller "resolve" Demo
-================================================
+AngularJS1 "@uirouter" Controller Demo
+=======================================
 
-'resolve'是用来给controller提供可inject的依赖的
+在state中使用`controller`，跟angularjs中的controller效果相同。
 
 ```
 npm install
