@@ -7,3 +7,6 @@ AngularJS1 "@uirouter" Controller Demo
 npm install
 npm run demo
 ```
+
+注意：
+`controller`必须使用`function() {}`，而不能使用`() => {}`，否则会报错。
