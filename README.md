@@ -5,7 +5,7 @@ AngularJS1 "@uirouter" Controller Demo
 
 ```
 npm install
-npm run demo
+npm start
 ```
 
 注意：
